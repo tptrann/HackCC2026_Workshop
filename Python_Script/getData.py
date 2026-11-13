@@ -7,21 +7,11 @@ import serial
 import sqlite3
 import time
 import datetime
-import serial.tools.list_ports
 
 # Variable
 PORT = "COM3"           
 BAUDRATE = 115200       # Make sure you use the same baudrate as in Arduino IDE
 DATA_FILE = "data.db"   # Your database file 
-
-def find_esp32_port():
-    ports = serial.tools.list_ports.comports()
-    for port in ports:
-        # Nhận diện các chip nạp phổ biến trên ESP32 (CP210x, CH340, USB Serial)
-        if "CP210" in port.description or "CH340" in port.description or "USB" in port.description:
-            print(port.device)
-            return port.device
-    return None
 
 if __name__ == "__main__":
 
@@ -43,12 +33,6 @@ if __name__ == "__main__":
     conn.commit()
 
     # Connect to ESP32
-    port = find_esp32_port()
-    if not port:
-        print("Error: ESP32 not found.")
-        conn.close()
-        exit()
-
     try:    
         ser = serial.Serial(PORT, BAUDRATE, timeout = 1)
         time.sleep(2)

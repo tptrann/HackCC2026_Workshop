@@ -23,8 +23,9 @@
 Check out the **[slides](./slides/)** , which covers everything discussed in the workshop, including the syntax needed to develop a `.py` script to get data from the ESP32.
 
 ## Workshop Demo
-1. Check out the **[Python_script](./Python_Script/)** folder for the script.
-2. Check out the **[ultrasonic_sensor](./ultrasonic_sensor/)** folder for C++ code in Arduino IDE for ultrasonic sensor.
-3. Open **[database](./Database/data.db)** in VS Code while running python script to view the incoming data.
+1. Check out the **[find_port](./find_port/)** folder for code to find port connected to ESP32.
+2. Check out the **[Python_script](./Python_Script/)** folder for the script.
+3. Check out the **[ultrasonic_sensor](./ultrasonic_sensor/)** folder for C++ code in Arduino IDE for ultrasonic sensor.
+4. Open **[database](./Database/data.db)** in VS Code while running python script to view the incoming data.
    
    You can install **SQLite3 Editor** extension in VS Code to view `.db` files directly.
