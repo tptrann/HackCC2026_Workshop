@@ -11,7 +11,7 @@ import datetime
 # Variable
 PORT = "COM3"           
 BAUDRATE = 115200       # Make sure you use the same baudrate as in Arduino IDE
-DATA_FILE = "data.db"   # Your database file 
+DATA_FILE = "Database/data.db"   # Your database file 
 
 if __name__ == "__main__":
 
@@ -51,6 +51,7 @@ if __name__ == "__main__":
                 # Make sure the data format in your Python script 
                 # matches what you print to the Serial Monitor in your ESP32 code
                 if response == "DATA: Object detected":
+                    # Do something
                     timeDetection = datetime.datetime.now()
                     timeToStore = timeDetection.strftime("%H:%M:%S")
 

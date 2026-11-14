@@ -12,4 +12,3 @@ if __name__ == "__main__":
         # Indentify popular port in ESP32 (CP210x, CH340, USB Serial)
         if "CP210" in port.description or "CH340" in port.description or "USB" in port.description:
             print(port.device)
-            
