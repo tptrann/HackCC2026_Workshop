@@ -1,5 +1,5 @@
 # HackCC 2026 Workshop
-    Hey, welcome to HackCC! Hope this workshop today could you help to build your project!
+    Hey, welcome to HackCC! Hope this workshop could you help you build your project!
 
 ## Start Here!
 1. If you haven't installed Python yet, please download and install it from https://www.python.org/downloads/
