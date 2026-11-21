@@ -50,6 +50,13 @@ if __name__ == "__main__":
 
                 # Make sure the data format in your Python script 
                 # matches what you print to the Serial Monitor in your ESP32 code
+                # If data includes dynamic numbers, you can organize rows printed on Serial
+                # Example: "DATA: 25,10,34"
+                # In .py you can use:
+                # if response.startswith("DATA:"):
+                    # raw_data = response.replace("DATA:", "")                  # remove the word "DATA:"
+                    # data_list = [x.strip() for x in raw_data.split(",")]          # to get list of string
+
                 if response == "DATA: Object detected":
                     # Do something
                     timeDetection = datetime.datetime.now()
